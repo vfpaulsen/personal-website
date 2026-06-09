@@ -202,6 +202,12 @@ main {
   stroke-width: 1.9;
 }
 
+.contact-icon .brand-svg,
+.footer-icon-link .brand-svg {
+  fill: currentColor;
+  stroke: none;
+}
+
 .icon-only-contact {
   justify-content: center;
   padding: 12px;
