@@ -19,12 +19,12 @@ const projects = [
     title: 'Mortal Legacy Website',
     type: 'Web Design',
     description:
-      'Designed and developed a responsive Wix website for a digital platform focused on preserving and sharing personal stories and memories. The site presents the concept clearly and establishes the foundation for a future solution where users can store and share images, video, and messages.',
+      'Designed and developed a responsive Wix website for a digital platform focused on preserving and sharing personal stories and memories. The site presents the concept clearly and establishes the foundation for a future solution where users can store and share images, video and messages.',
     stack: ['Wix', 'Web Design', 'UX/UI', 'Branding', 'Responsive Design'],
     link: 'https://www.mortallegacy.com',
   },
   {
-    title: 'Protomék Company Website',
+    title: 'Protomek Company Website',
     type: 'Business Website',
     description:
       'Designed and developed a responsive Wix website for a technical and industrial company on assignment from Maxad. The site focuses on clearly presenting services and expertise, with structured content and user-friendly navigation to strengthen the company’s digital profile.',
@@ -35,7 +35,7 @@ const projects = [
     title: 'Norsk Herdesenter Website',
     type: 'Business Website',
     description:
-      'Designed and developed a responsive Wix website for a hardening center on assignment from Maxad. The website focuses on clear service presentation, structured information, and user-friendly navigation to strengthen the company’s online presence and make it easier for customers to find relevant information and get in touch.',
+      'Designed and developed a responsive Wix website for a hardening center on assignment from Maxad. The website focuses on clear service presentation, structured information and user-friendly navigation to strengthen the company’s online presence and make it easier for customers to find relevant information and get in touch.',
     stack: ['Wix', 'Web Design', 'UX/UI', 'Information Architecture', 'CMS'],
     link: 'https://www.herdesenter.no/',
   },
@@ -43,7 +43,7 @@ const projects = [
     title: 'Personal Portfolio Website',
     type: 'Frontend Development',
     description:
-      'Designed and developed a responsive personal portfolio website using React and Vite. The site presents projects, contact information, job applications, and a downloadable CV, with a custom dark blue visual identity and reusable component structure.',
+      'Designed and developed a responsive personal portfolio website using React and Vite. The site presents projects, contact information, job applications and a downloadable CV, with a custom dark blue visual identity and reusable component structure.',
     stack: ['React', 'Vite', 'React Router', 'CSS', 'Responsive Design'],
   },
 ]
