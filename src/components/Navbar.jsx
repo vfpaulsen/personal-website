@@ -2,7 +2,6 @@ import { NavLink } from 'react-router-dom'
 
 const navItems = [
   { label: 'Home', path: '/' },
-  { label: 'CV', path: '/cv' },
   { label: 'Applications', path: '/applications' },
 ]
 
@@ -22,6 +21,9 @@ function Navbar() {
             {item.label}
           </NavLink>
         ))}
+        <a className="nav-link download-link" href="/cv.pdf" download>
+          Download CV
+        </a>
       </nav>
     </header>
   )

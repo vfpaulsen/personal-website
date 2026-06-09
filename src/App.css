@@ -7,7 +7,7 @@
   justify-content: space-between;
   gap: 24px;
   padding: 18px clamp(20px, 4vw, 48px);
-  background: rgba(250, 250, 248, 0.92);
+  background: rgba(7, 19, 33, 0.9);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(16px);
 }
@@ -34,7 +34,18 @@
 .nav-link:hover,
 .nav-link.active {
   color: var(--text-h);
-  background: var(--surface);
+  background: #132844;
+}
+
+.download-link {
+  color: #06111f;
+  background: var(--accent);
+  font-weight: 700;
+}
+
+.download-link:hover {
+  color: #06111f;
+  background: #7dd3fc;
 }
 
 main {
@@ -57,7 +68,7 @@ main {
   display: flex;
   align-items: center;
   background:
-    linear-gradient(90deg, rgba(250, 250, 248, 0.96) 0%, rgba(250, 250, 248, 0.74) 58%),
+    linear-gradient(90deg, rgba(7, 19, 33, 0.98) 0%, rgba(7, 19, 33, 0.86) 58%),
     url('./assets/hero.png') right 12% center / min(42vw, 360px) auto no-repeat;
   border-bottom: 1px solid var(--border);
 }
@@ -117,6 +128,7 @@ main {
 .timeline-item {
   background: var(--surface);
   border: 1px solid var(--border);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.18);
   border-radius: 8px;
 }
 
@@ -210,7 +222,7 @@ main {
     min-height: auto;
     padding-block: 64px;
     background:
-      linear-gradient(180deg, rgba(250, 250, 248, 0.94), rgba(250, 250, 248, 0.94)),
+      linear-gradient(180deg, rgba(7, 19, 33, 0.96), rgba(7, 19, 33, 0.96)),
       url('./assets/hero.png') right 20px bottom 20px / 150px auto no-repeat;
   }
 
