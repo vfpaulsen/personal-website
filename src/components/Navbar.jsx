@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import logo from '../assets/vp-it-logo-clean.svg'
 
 const navItems = [
   { label: 'Home', path: '/' },
@@ -9,7 +10,7 @@ function Navbar() {
   return (
     <header className="site-header">
       <NavLink className="brand" to="/" aria-label="Go to homepage">
-        Portfolio
+        <img src={logo} alt="VP IT" />
       </NavLink>
       <nav className="nav-links" aria-label="Main navigation">
         {navItems.map((item) => (

@@ -1,17 +1,19 @@
+import profileImage from '../assets/PB.png'
+
 const projects = [
+  {
+    title: 'Campaign Price Management for Røhneselmer',
+    type: 'WordPress Plugin',
+    description:
+      'Developed a dynamic campaign pricing solution using the Google Sheets API to connect Google Sheets to WordPress through a custom plugin, allowing the client to update prices without CMS access.',
+    stack: ['WordPress', 'PHP', 'Google Sheets API', 'Automation', 'Shortcodes'],
+  },
   {
     title: 'Personal Website',
     type: 'Frontend',
     description:
-      'A portfolio website built with React, focused on clean structure, responsive layout, and simple content management.',
-    stack: ['React', 'Vite', 'CSS'],
-  },
-  {
-    title: 'Project Tracker',
-    type: 'Productivity',
-    description:
-      'A small dashboard concept for tracking projects, milestones, and application progress in one place.',
-    stack: ['React', 'UX', 'Data'],
+      'Designed and built a responsive portfolio website to present projects, contact information, job applications, and a downloadable CV.',
+    stack: ['React', 'Vite', 'CSS', 'React Router'],
   },
   {
     title: 'Learning Log',
@@ -27,13 +29,13 @@ const contactLinks = [
     label: 'Phone',
     icon: 'phone',
     value: '+47 950 95 700',
-    href: 'tel:+4700000000',
+    href: 'tel:+4795095700',
   },
   {
     label: 'Email',
     icon: 'email',
     value: 'vfpaulsen@gmail.com',
-    href: 'mailto:vegard@example.com',
+    href: 'mailto:vfpaulsen@gmail.com',
   },
   {
     label: 'LinkedIn',
@@ -84,10 +86,9 @@ function Home() {
       <section className="hero-section">
         <div className="hero-copy">
           <p className="eyebrow"></p>
-          <h1>Hi, I am Vegard</h1>
+          <h1>Hi, I am Vegard!</h1>
           <p className="lead">
-            I enjoy creating practical, user-friendly web projects with a focus on clarity,
-            structure, and continuous learning.
+            Developer with a passion for creating user-friendly solutions and a strong foundation in networks, systems and IT operations.
           </p>
           <ul className="contact-list" aria-label="Contact information">
             {contactLinks.map((item) => (
@@ -113,20 +114,18 @@ function Home() {
             ))}
           </ul>
         </div>
-        <div className="hero-portrait" aria-label="Profile image placeholder">
-          <img src="/profile-placeholder.svg" alt="Profile placeholder" />
+        <div className="hero-portrait" aria-label="Profile image">
+          <img src={profileImage} alt="Vegard Paulsen" />
         </div>
       </section>
 
-      <section className="section split-section" aria-labelledby="about-title">
+      <section className="section split-section about-section" aria-labelledby="about-title">
         <div>
           <p className="eyebrow">About me</p>
-          <h2 id="about-title">Curious, structured, and hands-on.</h2>
+          <h2 id="about-title">Developer mindset. Infrastructure perspective.</h2>
         </div>
         <p>
-          I am developing my skills across frontend development, design thinking, and
-          project work. This site collects my projects, CV, and job application history in
-          one clear place.
+         I enjoy understanding how technology works from end to end, from user interfaces and web applications to servers, networks and infrastructure. My background in both software development and IT operations allows me to approach problems from multiple angles and build solutions that are practical, reliable and user-focused. I am naturally curious, enjoy learning new technologies and take pride in delivering well-structured work that makes a difference.
         </p>
       </section>
 
