@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import logo from '../assets/vp-it-logo-clean.svg'
+import logo from '../assets/VP logo cropped.png'
 
 const navItems = [
   { label: 'Home', path: '/' },

@@ -1,4 +1,4 @@
-import logo from '../assets/vp-it-logo-clean.svg'
+import logo from '../assets/VP logo cropped.png'
 
 const footerLinks = [
   {
@@ -36,7 +36,7 @@ function Footer() {
     <footer className="site-footer">
       <div className="footer-brand">
         <img src={logo} alt="VP IT" />
-        <p>© 2026 Vegard Paulsen</p>
+        <p>&copy; 2026 Vegard Paulsen</p>
       </div>
       <div className="footer-links" aria-label="Footer links">
         {footerLinks.map((link) => (
