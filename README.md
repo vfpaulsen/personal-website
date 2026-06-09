@@ -1,16 +1,71 @@
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website for Vegard Paulsen, built with React and Vite.
 
-Currently, two official plugins are available:
+The site presents selected projects, contact information, a downloadable CV, and a job application tracker layout prepared for a future Google Sheets integration.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+- React
+- Vite
+- React Router
+- CSS
+- ESLint
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Pages
 
-## Expanding the ESLint configuration
+- `Home` - Hero section, contact information, about section, and selected projects.
+- `Job tracker` - A table-style job application tracker based on a Google Sheets structure.
+- `Download CV` - Navbar link that downloads `public/cv.pdf`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+```text
+src/
+  assets/          Logo and profile image assets
+  components/      Navbar and footer components
+  pages/           Home and job tracker pages
+public/
+  cv.pdf           Downloadable CV
+```
+
+## Getting Started
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Run linting:
+
+```bash
+npm run lint
+```
+
+## Deployment
+
+This project can be deployed on Vercel, Netlify, or any static hosting provider that supports Vite builds.
+
+Recommended settings:
+
+- Build command: `npm run build`
+- Output directory: `dist`
+
+## Notes
+
+- Project entries are currently stored as local data in `src/pages/Home.jsx`.
+- Job tracker rows are currently dummy data in `src/pages/Applications.jsx`.
+- The job tracker is designed to match a future Google Sheets integration with columns for applied date, company, position, deadline, status, and link.
