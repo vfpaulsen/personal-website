@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Footer from './components/Footer.jsx'
 import Navbar from './components/Navbar.jsx'
 import Applications from './pages/Applications.jsx'
 import Home from './pages/Home.jsx'
@@ -14,6 +15,7 @@ function App() {
           <Route path="/applications" element={<Applications />} />
         </Routes>
       </main>
+      <Footer />
     </BrowserRouter>
   )
 }

@@ -5,22 +5,46 @@ const projects = [
     title: 'Campaign Price Management for Røhneselmer',
     type: 'WordPress Plugin',
     description:
-      'Developed a dynamic campaign pricing solution using the Google Sheets API to connect Google Sheets to WordPress through a custom plugin, allowing the client to update prices without CMS access.',
+      'Developed a dynamic campaign pricing solution using the Google Sheets API to connect Google Sheets to WordPress through a custom built plugin, allowing the client to update prices without CMS access.',
     stack: ['WordPress', 'PHP', 'Google Sheets API', 'Automation', 'Shortcodes'],
   },
   {
-    title: 'Personal Website',
-    type: 'Frontend',
+    title: 'Halloween Mystery Box Registration Flow',
+    type: 'Shopify Automation',
     description:
-      'Designed and built a responsive portfolio website to present projects, contact information, job applications, and a downloadable CV.',
-    stack: ['React', 'Vite', 'CSS', 'React Router'],
+      'Developed and implemented an automated Shopify registration solution for a BI Norwegian Business School research campaign. The solution connected Shopify and Qualtrics through PID tracking, enabled user data to move across platforms, and used Shopify Flow to automate segmentation and reduce manual data handling.',
+    stack: ['Shopify', 'Shopify Flow', 'Qualtrics', 'PID Tracking', 'Data Integration'],
   },
   {
-    title: 'Learning Log',
-    type: 'Documentation',
+    title: 'Mortal Legacy Website',
+    type: 'Web Design',
     description:
-      'A structured archive for notes, technical experiments, and reflections from ongoing learning.',
-    stack: ['Writing', 'Research', 'Web'],
+      'Designed and developed a responsive Wix website for a digital platform focused on preserving and sharing personal stories and memories. The site presents the concept clearly and establishes the foundation for a future solution where users can store and share images, video, and messages.',
+    stack: ['Wix', 'Web Design', 'UX/UI', 'Branding', 'Responsive Design'],
+    link: 'https://www.mortallegacy.com',
+  },
+  {
+    title: 'Protomék Company Website',
+    type: 'Business Website',
+    description:
+      'Designed and developed a responsive Wix website for a technical and industrial company on assignment from Maxad. The site focuses on clearly presenting services and expertise, with structured content and user-friendly navigation to strengthen the company’s digital profile.',
+    stack: ['Wix', 'Web Design', 'UX/UI', 'Information Architecture', 'CMS'],
+    link: 'https://www.protomek.com/',
+  },
+  {
+    title: 'Norsk Herdesenter Website',
+    type: 'Business Website',
+    description:
+      'Designed and developed a responsive Wix website for a hardening center on assignment from Maxad. The website focuses on clear service presentation, structured information, and user-friendly navigation to strengthen the company’s online presence and make it easier for customers to find relevant information and get in touch.',
+    stack: ['Wix', 'Web Design', 'UX/UI', 'Information Architecture', 'CMS'],
+    link: 'https://www.herdesenter.no/',
+  },
+  {
+    title: 'Personal Portfolio Website',
+    type: 'Frontend Development',
+    description:
+      'Designed and developed a responsive personal portfolio website using React and Vite. The site presents projects, contact information, job applications, and a downloadable CV, with a custom dark blue visual identity and reusable component structure.',
+    stack: ['React', 'Vite', 'React Router', 'CSS', 'Responsive Design'],
   },
 ]
 
@@ -147,6 +171,11 @@ function Home() {
                   <li key={tag}>{tag}</li>
                 ))}
               </ul>
+              {project.link ? (
+                <a className="project-link" href={project.link} target="_blank" rel="noreferrer">
+                  Visit website
+                </a>
+              ) : null}
             </article>
           ))}
         </div>

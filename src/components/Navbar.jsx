@@ -3,7 +3,7 @@ import logo from '../assets/vp-it-logo-clean.svg'
 
 const navItems = [
   { label: 'Home', path: '/' },
-  { label: 'Applications', path: '/applications' },
+  { label: 'Job tracker', path: '/applications' },
 ]
 
 function Navbar() {
