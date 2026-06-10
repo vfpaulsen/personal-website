@@ -57,7 +57,7 @@ npm run lint
 
 ## Google Sheets Job Tracker
 
-The job tracker can read application rows from a published Google Sheet CSV URL.
+The job tracker is protected by a Vercel serverless password gate and can read application rows from a published Google Sheet CSV URL.
 When configured, the page refreshes the sheet data automatically every 60 seconds while the page is open.
 
 Expected columns:
@@ -82,18 +82,20 @@ Local setup:
 
 1. Publish the Google Sheet to the web as CSV.
 2. Copy `.env.example` to `.env.local`.
-3. Add the published CSV URL:
+3. Add the published CSV URL and a local password:
 
 ```bash
-VITE_APPLICATIONS_SHEET_CSV_URL="https://docs.google.com/spreadsheets/d/e/.../pub?gid=0&single=true&output=csv"
+APPLICATIONS_SHEET_CSV_URL="https://docs.google.com/spreadsheets/d/e/.../pub?gid=0&single=true&output=csv"
+JOB_TRACKER_PASSWORD="your-password"
 ```
 
 Vercel setup:
 
-Add the same variable in the Vercel project settings:
+Add the same variables in the Vercel project settings:
 
 ```bash
-VITE_APPLICATIONS_SHEET_CSV_URL
+APPLICATIONS_SHEET_CSV_URL
+JOB_TRACKER_PASSWORD
 ```
 
 ## Deployment
@@ -108,6 +110,6 @@ Recommended settings:
 ## Notes
 
 - Project entries are currently stored as local data in `src/pages/Home.jsx`.
-- Job tracker rows are loaded from Google Sheets when `VITE_APPLICATIONS_SHEET_CSV_URL` is configured.
+- Job tracker rows are loaded from Google Sheets when `APPLICATIONS_SHEET_CSV_URL` is configured.
 - If the sheet URL is missing or cannot be loaded, the job tracker shows an empty/error state instead of local dummy data.
 - Google Sheets published CSV data can sometimes be cached by Google briefly, so updates may not always appear instantly.
