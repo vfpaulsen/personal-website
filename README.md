@@ -55,6 +55,47 @@ Run linting:
 npm run lint
 ```
 
+## Google Sheets Job Tracker
+
+The job tracker can read application rows from a published Google Sheet CSV URL.
+When configured, the page refreshes the sheet data automatically every 60 seconds while the page is open.
+
+Expected columns:
+
+- `Applied`
+- `Company`
+- `Position`
+- `Application Deadline`
+- `Status`
+- `Link`
+
+Supported status values:
+
+- `To apply`
+- `Applied`
+- `Interview`
+- `Offer`
+- `Hired`
+- `Rejected`
+
+Local setup:
+
+1. Publish the Google Sheet to the web as CSV.
+2. Copy `.env.example` to `.env.local`.
+3. Add the published CSV URL:
+
+```bash
+VITE_APPLICATIONS_SHEET_CSV_URL="https://docs.google.com/spreadsheets/d/e/.../pub?gid=0&single=true&output=csv"
+```
+
+Vercel setup:
+
+Add the same variable in the Vercel project settings:
+
+```bash
+VITE_APPLICATIONS_SHEET_CSV_URL
+```
+
 ## Deployment
 
 This project can be deployed on Vercel, Netlify, or any static hosting provider that supports Vite builds.
@@ -67,5 +108,6 @@ Recommended settings:
 ## Notes
 
 - Project entries are currently stored as local data in `src/pages/Home.jsx`.
-- Job tracker rows are currently dummy data in `src/pages/Applications.jsx`.
-- The job tracker is designed to match a future Google Sheets integration with columns for applied date, company, position, deadline, status, and link.
+- Job tracker rows are loaded from Google Sheets when `VITE_APPLICATIONS_SHEET_CSV_URL` is configured.
+- If the sheet URL is missing or cannot be loaded, the job tracker shows an empty/error state instead of local dummy data.
+- Google Sheets published CSV data can sometimes be cached by Google briefly, so updates may not always appear instantly.
