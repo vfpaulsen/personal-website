@@ -2,11 +2,12 @@ import profileImage from '../assets/PB.png'
 
 const projects = [
   {
-    title: 'Disc Golf Bag Analyzer',
+    title: 'BagLab - Build Your Disc Golf Bag',
     type: 'Frontend Development',
     description:
       'Built a disc golf bag analysis application using live disc data from the DiscIt API. The application categorizes discs by flight characteristics, identifies gaps in bag coverage, and provides recommendations based on stability profiles and disc types. It also includes interactive statistics, persistent bag storage, and custom analysis logic.',
     stack: ['React', 'TypeScript', 'DiscIt API', 'Tailwind CSS', 'Local Storage', 'Data Analysis'],
+    link: 'https://baglab-rho.vercel.app/',
   },
   {
     title: 'Campaign Price Management for Røhneselmer',
