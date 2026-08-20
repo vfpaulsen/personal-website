@@ -22,7 +22,7 @@ function Navbar() {
             {item.label}
           </NavLink>
         ))}
-        <a className="nav-link download-link" href="/cv.pdf" download>
+        <a className="nav-link download-link" href="/cv-vegard-paulsen-2026.pdf" download>
           Download CV
         </a>
       </nav>
