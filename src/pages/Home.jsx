@@ -5,8 +5,8 @@ const projects = [
     title: 'BagForge - Build Your Perfect Disc Golf Bag',
     type: 'Frontend Development',
     description:
-      'Built a full-featured disc golf bag builder with access to more than 10,000 disc models through the DiscIt API. Users can search and filter discs, add custom models, organize multiple bags, and analyze stability, speed, shot shapes, and coverage gaps in real time. Accounts provide cloud sync across devices, while public bags and player profiles make setups easy to share.',
-    stack: ['React', 'TypeScript', 'DiscIt API', 'Tailwind CSS', 'Cloud Sync', 'Data Analysis'],
+      'Built a full-featured disc golf bag builder with access to more than 10,000 disc models through the DiscIt API. Users can manage multiple cloud-synced bags, record details for individual discs, identify coverage gaps, create custom models, and share public profiles or export-ready bag images. Implemented passwordless and Google authentication, Supabase/PostgreSQL storage with Row Level Security, responsive disc sorting, local recovery backups, and performance-focused code splitting.',
+    stack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'Vercel'],
     link: 'https://www.bagforge.app/',
   },
   {
