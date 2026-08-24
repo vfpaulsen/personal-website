@@ -126,7 +126,7 @@ export function normalizeApplications(csvText) {
   }
 
   const headers = parsedRows[headerRowIndex]
-  const rows = parsedRows.slice(headerRowIndex + 1)
+  const rows = parsedRows.slice(headerRowIndex + 1).reverse()
   const headerIndexes = headers.reduce((indexes, header, index) => {
     indexes[header.toLowerCase()] = index
     return indexes
