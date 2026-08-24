@@ -2,12 +2,12 @@ import profileImage from '../assets/PB.png'
 
 const projects = [
   {
-    title: 'BagLab - Build Your Disc Golf Bag',
+    title: 'BagForge - Build Your Perfect Disc Golf Bag',
     type: 'Frontend Development',
     description:
-      'Built a disc golf bag analysis application using live disc data from the DiscIt API. The application categorizes discs by flight characteristics, identifies gaps in bag coverage, and provides recommendations based on stability profiles and disc types. It also includes interactive statistics, persistent bag storage, and custom analysis logic.',
-    stack: ['React', 'TypeScript', 'DiscIt API', 'Tailwind CSS', 'Local Storage', 'Data Analysis'],
-    link: 'https://baglab-rho.vercel.app/',
+      'Built a full-featured disc golf bag builder with access to more than 10,000 disc models through the DiscIt API. Users can search and filter discs, add custom models, organize multiple bags, and analyze stability, speed, shot shapes, and coverage gaps in real time. Accounts provide cloud sync across devices, while public bags and player profiles make setups easy to share.',
+    stack: ['React', 'TypeScript', 'DiscIt API', 'Tailwind CSS', 'Cloud Sync', 'Data Analysis'],
+    link: 'https://www.bagforge.app/',
   },
   {
     title: 'Campaign Price Management for Røhneselmer',
